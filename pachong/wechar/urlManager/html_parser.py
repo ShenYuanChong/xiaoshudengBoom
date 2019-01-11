@@ -1,21 +1,30 @@
+import re
+from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 
 class HtmlParser(object):
 
-    def parser(self, html,download_url):
+    def parser(self, html):
         if html is None :
             return
+        #解析页面中含有下载链接的链接
+        pattern = re.compile(r'downurls.push(.*?);' )
+        item_list = pattern.findall(html)
+        self._get_new_urls(item_list)
 
-        soup = BeautifulSoup(html, 'html.parser', from_encoding='utf-8')
-        self._get_new_urls(download_url, soup)
 
-
-    def _get_new_urls(self, page_url, soup):
+    def _get_new_urls(self, item_list):
         new_urls = set()
-        # /view/123.htm
-        links = soup.find_all('a', href=re.compile(r"/view/\d+\.htm"))
-        for link in links:
-            new_url = link['href']
-            new_full_url = urlparse.urljoin(page_url, new_url)
-            new_urls.add(new_full_url)
+        # http://www.xiaoshudeng.com/thread-17124-1-1.html
+        # <a title="下载" class="downloadpdf xi2" target="_blank" href="./forum.php?mod=attachment&amp;aid=MjU3Mjd8M2YzN2RhNjV8MTU0NzE3ODI5Nnw3NzM2MnwxNzEyNA%3D%3D"> [下载]</a>
+
+        #链接保存到set（）里
+        f = open("downLoadUrl.txt", "w+")
+        for link in item_list:
+            new_urls.add(link)
+            #同时写入到文件保存
+            f.write(link +'\n')
+            print(link +'\n')
+        f.close()
+        #返回set（）
         return new_urls
