@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id = 'linkUrl'>{{askUrl}}</p>
+<input type="button" value="场链接" onclick="checkLogin()">
+    <img id="xcode" style="width: 200px; height: 200px; margin:100px 40%" src="{{ weixinUrl }}">
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        tip = 1
+        askUrl = $("#linkUrl").text();
+        function checkLogin() {
+            $.ajax({
+                url:'/check_login/',
+                data: {'tip': tip,'askUrl':askUrl},
+                type: 'GET',
+                dataType: 'JSON',
+                success:function (arg) {
+                    if (arg.code == 201){
+
+                    }else if (arg.code == 408){
+                         setTimeout("checkLogin()",3000);
+                    }else if (arg.code == 200){
+                        window.location.href='/wechat/index/'
+                    }
+                }
+            })
+        }
+
+    </script>
+
+
+
+</html>
