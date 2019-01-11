@@ -1,7 +1,5 @@
+import logging
 import re
-from urllib.parse import urlparse
-from bs4 import BeautifulSoup
-
 class HtmlParser(object):
 
     def parser(self, html):
@@ -15,8 +13,6 @@ class HtmlParser(object):
 
     def _get_new_urls(self, item_list):
         new_urls = set()
-        # http://www.xiaoshudeng.com/thread-17124-1-1.html
-        # <a title="下载" class="downloadpdf xi2" target="_blank" href="./forum.php?mod=attachment&amp;aid=MjU3Mjd8M2YzN2RhNjV8MTU0NzE3ODI5Nnw3NzM2MnwxNzEyNA%3D%3D"> [下载]</a>
 
         #链接保存到set（）里
         f = open("downLoadUrl.txt", "w+")
