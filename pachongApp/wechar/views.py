@@ -62,19 +62,19 @@ def check_login(req):
         cookieBean.setCookies(cookies)
         #调用下载管理器  最好要新线程
 
-        try:
+        # try:
             #thread1 = myThread()
-            spider_Main.SpiderMain().begin(200)
-            ret = {
-                'code': 201,  # 初始值408代表没有任何操作
-                'data': r1.text
-            }
-        except:
-            print("-------------------------线程报错-------------------------")
-            ret = {
-                'code': 408,  # 初始值408代表没有任何操作
-                'data': r1.text
-            }
+        spider_Main.SpiderMain().begin(20000,cookies)
+        ret = {
+            'code': 201,  # 初始值408代表没有任何操作
+            'data': r1.text
+        }
+        # except:
+        #     print("-------------------------线程报错-------------------------")
+        #     ret = {
+        #         'code': 408,  # 初始值408代表没有任何操作
+        #         'data': r1.text
+        #     }
 
 
     else:

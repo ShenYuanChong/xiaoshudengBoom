@@ -2,35 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b721dbc1-ac24-413a-8e00-f47cfc63d82e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pachongApp/wechar/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/.idea/pachong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/.idea/pachong.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/pachong/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/urlManager/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/pachong/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/pachong/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/pachong/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/pachong/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/pachong/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/pachong/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/templates/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/downLoad/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/downLoad/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/downLoad/cookie_bean.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/downLoad/cookie_bean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/downLoad/downloader_manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/downLoad/spider_Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/urlManager/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/pachong/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/urlManager/html_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/urlManager/url_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/urlManager/url_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong/wechar/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pachongApp/wechar/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pachongApp/wechar/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pachongApp/wechar/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,8 +21,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pachongApp/wechar/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="384">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
               </folding>
@@ -53,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spider_Main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spider_Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+            <state relative-caret-position="569">
+              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -65,23 +42,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="downloader_manager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="html_parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cookie_bean.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/cookie_bean.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="downloader_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="432">
+              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url_manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urlManager/url_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -89,22 +78,10 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="175">
               <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pachongApp/pachong/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-              <folding>
-                <element signature="e#644#676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,11 +136,12 @@
         <option value="$PROJECT_DIR$/pachongApp/pachong/wsgi.py" />
         <option value="$PROJECT_DIR$/pachongApp/manage.py" />
         <option value="$PROJECT_DIR$/pachongApp/wechar/downLoad/cookie_bean.py" />
-        <option value="$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py" />
-        <option value="$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py" />
         <option value="$PROJECT_DIR$/pachongApp/wechar/urls.py" />
         <option value="$PROJECT_DIR$/pachongApp/pachong/urls.py" />
         <option value="$PROJECT_DIR$/pachongApp/wechar/views.py" />
+        <option value="$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py" />
+        <option value="$PROJECT_DIR$/pachongApp/wechar/tests.py" />
+        <option value="$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py" />
         <option value="$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py" />
       </list>
     </option>
@@ -204,13 +182,6 @@
               <item name="githubPachong" type="462c0819:PsiDirectoryNode" />
               <item name="pachongApp" type="462c0819:PsiDirectoryNode" />
               <item name="wechar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="githubPachong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="githubPachong" type="462c0819:PsiDirectoryNode" />
-              <item name="pachongApp" type="462c0819:PsiDirectoryNode" />
-              <item name="wechar" type="462c0819:PsiDirectoryNode" />
-              <item name="downLoad" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,6 +243,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pachong" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pachongApp/wechar" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pachongApp/wechar/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pachong" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -294,9 +283,11 @@
       <item itemvalue="Python.pachong" />
       <item itemvalue="Python.tests" />
       <item itemvalue="Python.downloader_manager" />
+      <item itemvalue="Python.tests (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests (1)" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python.downloader_manager" />
       </list>
@@ -320,30 +311,36 @@
       <option name="project" value="LOCAL" />
       <updated>1547190098906</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第二次爆破">
+      <created>1547199946791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547199946792</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.54276663" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.5058078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.32946146" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.5807814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.54276663" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.43928194" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5058078" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -366,6 +363,31 @@
           <line>38</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pachongApp/wechar/views.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -374,20 +396,15 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="34" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="new_cookies" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pachongApp/pachong/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -597,16 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pachongApp/pachong/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -652,31 +659,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoadUrl.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/BoomedUrl.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/cookie_bean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urlManager/url_manager.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -685,19 +669,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urls.py">
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/BoomedUrl.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="25">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoadUrl.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/selectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="321" column="12" lean-forward="true" selection-start-line="321" selection-start-column="12" selection-end-line="321" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pachongApp/pachong/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="428">
           <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
             <element signature="e#644#676#0" expanded="true" />
@@ -705,37 +696,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://G:/pythonwork/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="175">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pachongApp/wechar/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="384">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py">
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/cookie_bean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        <state relative-caret-position="400">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/downloader_manager.py">
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/urlManager/html_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="100">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pachongApp/wechar/downLoad/spider_Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

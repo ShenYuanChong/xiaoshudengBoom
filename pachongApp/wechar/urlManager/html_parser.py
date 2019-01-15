@@ -15,11 +15,11 @@ class HtmlParser(object):
         new_urls = set()
 
         #链接保存到set（）里
-        f = open("downLoadUrl.txt", "w+")
+        f = open("downLoadUrl.txt", "a+")
         for link in item_list:
             new_urls.add(link)
             #同时写入到文件保存
-            f.write(link +'\n')
+            f.write('www.xiaoshudeng.com' + link[3:-2] +'\n')
             print(link +'\n')
         f.close()
         #返回set（）
