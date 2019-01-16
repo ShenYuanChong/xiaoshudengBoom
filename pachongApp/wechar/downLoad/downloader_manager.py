@@ -15,31 +15,30 @@ class Downloader(object):
         url = self.host + link
         r1 = requests.get(url,cookies=cookies)
         new_cookies = r1.cookies.get_dict()
-
+        respHeaders = r1.headers
         for key in cookies.keys():
             if new_cookies.get(key) != None:
                 cookies[key] = new_cookies.get(key)
 
-
-        if(r1.status_code != 200):
-            f = open('400Url.txt', 'a+')
-            f.write(url + '\n')
-            f.close()
-            return None,cookies
-        if(r1.text.__contains__('<title>提示信息')):
+        if (respHeaders.get('content-type') == 'text/html; charset=utf-8'):
             print('+-------------------------------------------警告------------------------------+\n')
             print('|                                                                             |\n')
-            print('|                      '+url+' |\n')
-            print('|                         cookie已经失效                                       |\n')
+            print('|                      ' + url  + ' |\n')
+            print('|                         地址已经失效                                       |\n')
             print('|                                                                             |\n')
             print('|                                                                             |\n')
             print('+-----------------------------------------------------------------------------+')
-            f = open('cookiesFail.txt', 'a+')
-            f.write(url + '\n')
+            return 0, cookies, url
+        if (respHeaders.get('content-type') == 'application/octet-stream'):
+            temp = respHeaders.get('content-disposition')
+            bText = temp.encode('ISO-8859-1')
+            bbb = bText.decode('utf-8')
+            p = re.compile(r'"(.*?)"')
+            fileName = p.findall(bbb)
+            f = open(fileName[0], 'wb')
+            f.write(r1.content)
             f.close()
-            return None, cookies
-        f = open("BoomedUrl.txt", "a+")
-        f.write(url + '\n')
-        f.close()
-        print('已经爆破' + url + '\n')
-        return r1.text , cookies
+            return 1, cookies,url
+
+        return 0, cookies, url
+

@@ -1,3 +1,6 @@
+import re
+
+import chardet
 from django.test import TestCase
 
 # Create your tests here.
@@ -20,5 +23,9 @@ from pachongApp.wechar.urlManager import html_parser
 # html = downloader_manager.Downloader().openWebCatchDownloadUrl(link)
 # html_parser.HtmlParser().parser(html)
 
-url = '(\\./forum.php?mod=attachment&aid=OTh8MTU4OTA3ZjZ8MTU0NzUyNTE2Mnw3NzM2Mnw5\\)'
-print(url[3:-2])
+tsxt = 'attachment; filename="éç¤¼è²éå¢2014-2015-2ç¬¬ä¸æ¬¡æèåä¸è¯­æè¯å·.pdf"'
+bText = tsxt.encode('ISO-8859-1')
+bbb = bText.decode('utf-8')
+aaa = chardet.detect(bText)
+print(aaa)
+print(bbb)

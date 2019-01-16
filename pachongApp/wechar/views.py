@@ -3,10 +3,13 @@ import re
 
 
 import threading
+
+import chardet
 import requests
 import json
 import  urllib.request
 # Create your views here.
+from django.utils.encoding import escape_uri_path
 
 from pachongApp.wechar.downLoad import cookie_bean, spider_Main
 from django.shortcuts import render, HttpResponse, redirect
@@ -49,39 +52,53 @@ def check_login(req):
 
     # 扫码之后，点击确定登录
     cookies = r1.cookies.get_dict()  # 获取确认登陆的cookie
-    # 之后构建header 最重要是cookie
 
-    if '<![CDATA[1]]>' in r1.text:
-        r1 = requests.get(url1, cookies=cookies)  # 获取响应
-        print("-------------------------<![CDATA[1]]>-------------------------\n")
 
-    elif '<![CDATA[done]]>' in r1.text:
+    if '<![CDATA[done]]>' in r1.text:
         # 扫码之后，点击确定登录
         print("-------------------------<![CDATA[done]]>-------------------------\n")
-        cookieBean = cookie_bean.CookieBean()
-        cookieBean.setCookies(cookies)
-        #调用下载管理器  最好要新线程
+        fname = 'downLoadUrl.txt'
+        f1 = open(fname, 'r')
+        line = f1.readline()
+        while line:
+            count = 1
+            tip = None
+            url = 'http://' + line[:-1]
+            r1 = requests.get(url, cookies=cookies)
+            new_cookies = r1.cookies.get_dict()
+            respHeaders = r1.headers
+            for key in cookies.keys():
+                if new_cookies.get(key) != None:
+                    cookies[key] = new_cookies.get(key)
 
-        # try:
-            #thread1 = myThread()
-        spider_Main.SpiderMain().begin(20000,cookies)
-        ret = {
-            'code': 201,  # 初始值408代表没有任何操作
-            'data': r1.text
-        }
-        # except:
-        #     print("-------------------------线程报错-------------------------")
-        #     ret = {
-        #         'code': 408,  # 初始值408代表没有任何操作
-        #         'data': r1.text
-        #     }
+            # 地址失效
+            if (respHeaders.get('content-type') == 'text/html; charset=utf-8'):
+                print('+-------------------------------------------警告------------------------------+\n')
+                print('|                                                                             |\n')
+                print('|                      ' + url + ' |\n')
+                print('|                         地址已经失效                                       |\n')
+                print('|                                                                             |\n')
+                print('|                                                                             |\n')
+                print('+-----------------------------------------------------------------------------+')
+                tip = 0
+            if (respHeaders.get('content-type') == 'application/octet-stream'):
+                print(url + '\n')
+                temp = respHeaders.get('content-disposition')
+                bText = temp.encode('ISO-8859-1')
+                bbb = bText.decode('utf-8')
+                p = re.compile(r'"(.*?)"')
+                fileName = p.findall(bbb)
+                mulu = "g:/student/"+fileName[0]
+                f = open(mulu, 'wb')
+                f.write(r1.content)
+                f.close()
+                tip = 1
+            f = open('downLoadInfo.txt', 'w+')
+            f.write(str(tip) + '|' + str(count) + '|' + url + '\n')
+            f.close()
+            count = count + 1
+            line = f1.readline()
 
-
-    else:
-        ret = {
-            'code': 408,  # 初始值408代表没有任何操作
-            'data': r1.text
-        }
 
     return HttpResponse(json.dumps(ret))  # Json序列化返回
 
